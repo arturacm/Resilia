@@ -20,26 +20,52 @@ header {
 }
 .titleedge:hover{
     background-color: rgb(141, 143, 38);
+    transition: background-color 0.2s;
 }
 
 h1, h2 {
     padding-left: 10px;
     
 }
-h1:hover {
+header h1:hover {
     font-size: 2.5rem;
+    transition: font-size 0.1s;
 }
 
 a{
     text-decoration: none;
 }
 
-h2 {
+header h2 {
     color: black;
 }
-h2:hover{
+header h2:hover{
     color: #cccccc;
+    transition: color 0.2s;
 }
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+main img{
+    height: auto;
+    box-sizing: border-box;
+    /*border: black 5px solid;*/
+    width: 25%;
+    border: black 2px solid;
+    transition: border 0.2s;
+}
+img:hover{
+    border:rgb(220, 223, 58) 4px solid;
+}
+
 @media screen and (max-width:700px){
     h1{
         display: none;
@@ -52,4 +78,14 @@ h2:hover{
         justify-content: flex-end;
         height: 300px;
     }
+    .container{
+        flex-direction: column;
+    }
+    main {
+        padding-top: 100px;
+    }
+    main img{
+        width: 100%;
+    }
+    
 }
