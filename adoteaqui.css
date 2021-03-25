@@ -1,7 +1,16 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-color: black;
+}
 header {
+    
     color:  rgb(220, 223, 58);
     margin: 0;
-    border-radius: 4px;
+    /*border-radius: 10px;*/
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -65,18 +74,34 @@ main img{
 img:hover{
     border:rgb(220, 223, 58) 4px solid;
 }
+footer{
+    color:  black;
+    margin: 0;
+    border-radius: 4px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #818181;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 50px;
+    align-items: center;
+
+}
 
 @media screen and (max-width:700px){
     h1{
         display: none;
     }
     .titleedge{
+        margin-top: 100px;
+        /*border-radius: 10px;*/
         display: flex;
         flex-direction: column;
         width: 100%;
         align-items: center;
-        justify-content: flex-end;
-        height: 300px;
+        justify-content: space-evenly;
+        height: 200px;
     }
     .container{
         flex-direction: column;
